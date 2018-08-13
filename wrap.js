@@ -2,7 +2,7 @@ function wrap(line, maxLen) {
   if (line.length <= maxLen) {
     return line;
   }
-  const indexOfBlank = line.lastIndexOf('', maxLen);
+  const indexOfBlank = line.lastIndexOf(' ', maxLen);
   let split;
   let offset;
   if (indexOfBlank > -1) {
